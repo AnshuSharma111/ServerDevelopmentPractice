@@ -1,0 +1,16 @@
+{
+  "name": "serverdevelopmentpractice",
+  "version": "1.0.0",
+  "description": "Practice making servers with node, express and me.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
