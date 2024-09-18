@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
         res.write(homePage);
         res.end();
     }
-    // load styles.css for homepage
+    // load home page css
     else if(url == '/styles.css'){
         res.writeHead(200, {'content-type' : 'text/css'});
         res.write(homePageCss);
@@ -33,3 +33,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(5000);
+
+// we can see that the entire process is tedious. having to tend to every request manually. This can be made better using EXPRESS

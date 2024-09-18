@@ -1,0 +1,12 @@
+body{
+    background-color: blanchedalmond;
+    margin-block: 1px;
+}
+.genericPara{
+    font-family: fantasy;
+    font-style: oblique;
+}
+.heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
