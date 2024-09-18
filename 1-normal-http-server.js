@@ -1,8 +1,9 @@
 const http = require('http');
-const { readFileSync } = require('fs');
+const { readFileSync, read, readFile } = require('fs');
 
-const homePage = readFileSync("./index.html");
-const homePageCss = readFileSync("./styles.css");
+const homePage = readFileSync("./structure/index.html");
+const homePageCss = readFileSync("./styling/styles.css");
+const aboutPage = readFileSync("./structure/about.html")
 
 const server = http.createServer((req, res) => {
     const url = req.url;
@@ -14,17 +15,23 @@ const server = http.createServer((req, res) => {
         res.end();
     }
     // load home page css
-    else if(url == '/styles.css'){
+    else if(url == '/styling/styles.css'){
         res.writeHead(200, {'content-type' : 'text/css'});
         res.write(homePageCss);
         res.end();
     }
+    // load about page
     else if (url === '/about'){
         res.writeHead(200, {'content-type' : 'text/html'});
-        res.write('<h1>The answer my friend. Is blowing in the wind</h1>');
+        res.write(aboutPage);
         res.end();
     }
-
+    // load about css
+    else if(url == '/styling/styles.css'){
+        res.writeHead(200, {'content-type' : 'text/css'});
+        res.write(homePageCss);
+        res.end();
+    }
     else{
         res.writeHead(404, {'content-type' : 'text/html'});
         res.write('<h1>Not Found</h1>');
