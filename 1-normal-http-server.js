@@ -8,7 +8,7 @@ const aboutPage = readFileSync("./structure/about.html")
 const server = http.createServer((req, res) => {
     const url = req.url;
     console.log(url)
-    // load the entire home page
+    // load the home page by first loading the html asscoiated with it then the css and so on.
     if (url === '/'){
         res.writeHead(200, {'content-type' : 'text/html'});
         res.write(homePage);

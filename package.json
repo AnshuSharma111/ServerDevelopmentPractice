@@ -4,12 +4,13 @@
   "description": "Practice making servers with node, express and me.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon 3-express-basics.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.21.0",
     "nodemon": "^3.1.4"
   }
