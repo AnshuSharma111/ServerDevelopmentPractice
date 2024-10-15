@@ -32,5 +32,5 @@ app.listen(5000, () => {
 // USE : For middleware
 // LISTEN
 
-
 // res.status() is used to return status of request in form of code (200, 404 etc) and these methods can also be chained together like app.status().send()
+// So far, we have not done anything majorly different from a regular HTTP server. This was just an illustration to show how to serve only html files. We deal with CSS and other files in 3)

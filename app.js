@@ -24,7 +24,6 @@ const server = http.createServer((req, res) => {
         res.write('<h1>The answer my friend. Is blowing in the wind</h1>');
         res.end();
     }
-
     else{
         res.writeHead(404, {'content-type' : 'text/html'});
         res.write('<h1>Not Found</h1>');
