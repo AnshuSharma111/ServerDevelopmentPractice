@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 // we can also use route params. They are defined by using colon and then parma name in abse path
 const data = [{id : 1, name : 'anshu', surname : 'sharma', Age : '18', desc : "Cool mfker"}, 
-            {id : 2, name : 'aditi', surname : 'shukla', Age : '19', desc : "lovely lady"}, 
+            {id : 2, name : 'past', surname : 'history', Age : '19', desc : "squabble up"}, 
             {id : 3, name : 'arpit', surname : 'pathania', Age : '19', desc : "the singular NPC"}, 
             {id : 4, name : 'parv', surname : 'gupta', Age : '19', desc : "The underfed ass"}]
 app.get('/:name/:surname', (req, res) => {

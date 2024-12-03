@@ -2,9 +2,9 @@
   "name": "serverdevelopmentpractice",
   "version": "1.0.0",
   "description": "Practice making servers with node, express and me.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon 3-express-basics.js"
+    "start": "nodemon middleware-second.js"
   },
   "keywords": [],
   "author": "",
