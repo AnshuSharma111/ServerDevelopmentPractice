@@ -5,11 +5,13 @@ const app = express();
 
 // serving middleware to routes that start with /api
 app.use('/api', apiOnly);
-// applying logger to evvery path
+app.use(express.static('public'));
+
+// applying logger to every path
 app.use(logger);
 
 app.get('/', (req, res) => {
-    res.send(homePage);
+    res.status(200).sendFile(path.resolve(__dirname, 'src/index.html'))
 })
 
 app.get('/api', (req, res) => {

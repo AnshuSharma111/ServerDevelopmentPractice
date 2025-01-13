@@ -1,4 +1,5 @@
 const http = require('http');
+const path = require('path');
 const { readFileSync } = require('fs');
 
 const homePage = readFileSync("./src/index.html");

@@ -6,7 +6,7 @@ const app = express()
 app.get('/', (req, res) => {
     res.json([{name : "Anshu"}, {name : 'mf'}])
 })
-
+``
 // we can also use route params. They are defined by using colon and then parma name in abse path
 const data = [{id : 1, name : 'anshu', surname : 'sharma', Age : '18', desc : "Cool mfker"}, 
             {id : 2, name : 'past', surname : 'history', Age : '19', desc : "squabble up"}, 

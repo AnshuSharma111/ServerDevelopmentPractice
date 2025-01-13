@@ -3,8 +3,8 @@ const express = require('express')
 app = express()
 
 // req => middleware => res
-// You always need to pass control from one middleware function to the nest after tehe execution of the first middleware function
-// we can sneak in the middleware function in the get requuest app.get(url, middleware, callback function)
+// You always need to pass control from one middleware function to the next after the execution of the first middleware function
+// we can sneak in the middleware function in the get request app.get(url, middleware, callback function)
 
 const logger = (req, res, next) => {
     console.log(req.url);
