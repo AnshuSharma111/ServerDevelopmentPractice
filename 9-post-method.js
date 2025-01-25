@@ -4,8 +4,8 @@ const { logger, apiOnly } = require('./middleware-exports')
 
 app = express()
 app.use(express.static('public'))
-app.use(logger)
 app.use(express.urlencoded({ extended: false }))
+app.use(logger)
 
 app.get('/form/', (req, res) => {
     res.status(200).sendFile(path.resolve(__dirname, 'src/form.html'));
